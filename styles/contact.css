@@ -1,0 +1,56 @@
+/*contact*/
+.row-contact {
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.contact-card-href {
+  display: inline-block;
+  text-decoration: none;
+}
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 15px;
+  max-width: fit-content;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+}
+.contact-card:hover > .icon-box{
+  background-color: white;
+}
+.contact-card:hover > .icon-box > i {
+  color: var(--pink);
+}
+.contact-card .icon-box {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  transition: background-color 0.3s ease;
+}
+.contact-card .icon-box i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  transition: color 0.3s ease;
+}
+#mail-icon {
+  animation: fly-in-mail 10s ease-out 3s infinite;
+}
+.contact-card .text-box {
+  font-size: 18px;
+}
+@keyframes fly-in-mail {
+  0% {left: 50%; opacity: 1;}
+  2.5% {left: 100%; opacity: 0;}
+  5% {left: 0; opacity: 0;}
+  10% {left: 50%; opacity: 1;}
+  100% {left: 50%; opacity: 1;}
+}

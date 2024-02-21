@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ws | the edge hotel</title>
+  <link rel="stylesheet" href="../../styles/general.css">
+  <link rel="stylesheet" href="../../styles/project.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="nav-box">
+      <div class="name-box">Weronika<span class="text-highlight">Szafron</span></div>
+      <ul class="nav-links">
+        <li><a href="../../about.html">o mnie</a></li>
+        <li><a href="../../projects.html">projekty</a></li>
+        <li><a href="../../contact.html">kontakt</a></li>
+      </ul>
+      <div class="icons-box">
+        <a href="https://pl.linkedin.com/in/weronika-szafron-9928b02b1" target="_blank"><i class='bx bxl-linkedin' style="font-size: 22px;"></i></a>
+        <a href="https://www.instagram.com/weronikaszafron?igsh=MWZ6ODNpbzEyNXM4bg==
+        " target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100018357077857" target="_blank"><i class='bx bxl-facebook'></i></a>
+      </div>
+      <div class="burger-button-box">
+        <div class="burger-button" onclick="openNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-alt">
+    <ul class="nav-links">
+      <li><a href="../../about.html">o mnie</a></li>
+      <li><a href="../../projects.html">projekty</a></li>
+      <li><a href="../../contact.html">kontakt</a></li>
+    </ul>
+    <div class="icons-box">
+      <a href="https://pl.linkedin.com/in/weronika-szafron-9928b02b1" target="_blank"><i class='bx bxl-linkedin' style="font-size: 22px;"></i></a>
+      <a href="https://www.instagram.com/weronikaszafron?igsh=MWZ6ODNpbzEyNXM4bg==
+      " target="_blank"><i class='bx bxl-instagram'></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100018357077857" target="_blank"><i class='bx bxl-facebook'></i></a>
+    </div>
+  </div>
+  <div class="main">
+    <section>
+      <div class="slideshow-box">
+        <div class="slides">
+          <div class="slide">
+            <img src="r1.jpg" alt="wizualizacja 1 hotelu na krawędzi jeziora">
+          </div>
+          <div class="slide">
+            <img src="r2.png" alt="wizualizacja 2 hotelu na krawędzi jeziora">
+          </div>
+          <div class="slide">
+            <img src="p1.png" alt="rzut hotelu na krawędzi jeziora">
+          </div>
+          <div class="slide">
+            <img src="p2.png" alt="przekroje i widoki hotelu na krawędzi jeziora">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)"><i class='bx bx-chevron-left'></i></a>
+          <a class="next" onclick="plusSlides(1)"><i class='bx bx-chevron-right' ></i></a>
+        </div>
+        <div class="slideshow-row">
+          <div class="column">
+            <img src="r1.jpg" onclick="currentSlide(1)" alt="1 wizualizacja projektu">
+          </div>
+          <div class="column">
+            <img src="r2.png" onclick="currentSlide(2)"  alt="2 wizualizacja projektu">
+          </div>
+          <div class="column">
+            <img src="p1.png" onclick="currentSlide(3)"  alt="rzut projektu">
+          </div>
+          <div class="column">
+            <img src="p2.png" onclick="currentSlide(4)"  alt="przekroje i widoki projektu">
+          </div>
+        </div>
+      </div>
+      <h1 class="h1">the edge hotel</h1>
+      <div class="info-box">
+        <table>
+          <tr>
+            <th>lokalizacja:</th>
+            <td>Paprocany, Tychy</td>
+          </tr>
+          <tr>
+            <th>typ zabudowy:</th>
+            <td>usługowa</td>
+          </tr>
+          <tr>
+            <th>rok:</th>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <th>semestr:</th>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>przeznaczenie:</th>
+            <td>projekt semestralny</td>
+          </tr>
+          <tr>
+            <th>współpraca:</th>
+            <td>praca indywidualna</td>
+          </tr>
+          <tr>
+            <th>wykorzystane programy:</th>
+            <td>AutoCAD<br>Revit<br>3DS Max + Corona
+          </tr>
+          <tr>
+            <th>opis:</th>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi labore minus harum accusamus voluptas inventore impedit numquam enim ullam, quas nostrum, doloremque illo magnam molestias officia iusto? Est, quam tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi labore minus harum accusamus voluptas inventore impedit numquam enim ullam, quas nostrum, doloremque illo magnam molestias officia iusto? Est, quam tempore!</td>
+          </tr>
+          <tr>
+            <th>osiągnięcia:</th>
+            <td>brak</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    
+    <footer>
+      <p class="copyright">Copyright &#169; Weronika Szafron | 2024 | All Rights Reserved</p>
+    </footer>
+  </div>
+  <script src="../../js/slideshow.js"></script>
+  <script src="../../js/nav-alt.js"></script>
+</body>
+</html>
