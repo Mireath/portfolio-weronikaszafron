@@ -61,7 +61,7 @@ nav .nav-box .name-box .text-highlight {
   margin-left: 10px;
   color: var(--pink);
   font-size: 40px;
-  font-family: "Great Vibes", cursive;
+  font-family: "Great Vibes", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -230,5 +230,13 @@ footer .copyright {
   }
   .burger-button-box {
     display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav .nav-box .name-box {
+    font-size: 30px;
+  }
+  nav .nav-box .name-box .text-highlight {
+    font-size: 30px;
   }
 }
