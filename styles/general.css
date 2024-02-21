@@ -234,9 +234,9 @@ footer .copyright {
 }
 @media only screen and (max-width: 768px) {
   nav .nav-box .name-box {
-    font-size: 30px;
+    font-size: 34px;
   }
   nav .nav-box .name-box .text-highlight {
-    font-size: 30px;
+    font-size: 34px;
   }
 }
