@@ -49,15 +49,23 @@ nav .nav-box  {
 }
 nav .nav-box .name-box {
   display: flex;
+}
+nav .nav-box .name-box-alt {
+  display: none;
+  position: relative;
+  top: 5px;
+  pointer-events: none;
+}
+nav .nav-box .name-box, nav .nav-box .name-box-alt {
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 40px;
-  font-family: "Great Vibes", cursive;
+  font-family: "Great Vibes", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-nav .nav-box .name-box .text-highlight {
+nav .nav-box .name-box .text-highlight, nav .nav-box .name-box-alt .text-highlight  {
   margin-left: 10px;
   color: var(--pink);
   font-size: 40px;
@@ -216,6 +224,56 @@ footer .copyright {
   transform: translate(0, -11px) rotate(45deg);
 }
 
+/*button*/
+.button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  height: fit-content;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+.button:hover {
+  opacity: 1;
+}
+.button .text-box {
+  padding: 10px 0;
+  padding-left: 20px;
+  padding-right: 40px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px solid var(--pink);
+  border-radius: 30px 0 0 30px;
+}
+.button .icon-box {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  transition: all 0.2s ease;
+}
+.button:hover .icon-box {
+  background-color: white;
+}
+.button .icon-box i {
+  position: absolute;
+  font-size: 30px;
+  top:50%;
+  left:50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+}
+.button:hover .icon-box i {
+  color: var(--pink);
+}
+
  /*responsive*/
  @media only screen and (max-width: 1024px) {
   /*nav*/
@@ -232,11 +290,11 @@ footer .copyright {
     display: flex;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
   nav .nav-box .name-box {
-    font-size: 34px;
+    display: none;
   }
-  nav .nav-box .name-box .text-highlight {
-    font-size: 34px;
+  nav .nav-box .name-box-alt {
+    display: flex;
   }
 }

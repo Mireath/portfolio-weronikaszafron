@@ -9,27 +9,26 @@
 .info-box table, td, th {
   border-collapse: collapse;
 }
+.info-box table tr {
+  width: 100%;
+}
 .info-box table td, .info-box table th {
   width: 50%;
   vertical-align: text-top;
-  padding: 10px 10px;
+  padding: 10px;
   color: var(--textcol);
 }
 .info-box table th {
   color: var(--pink);
   text-align: right;
 }
-.info-box table td .textlist {
-  list-style-position: inside;
+/*desc-alt*/
+.info-box table .desc-alt {
+  display: none;
 }
-.info-box table td .textlist p {
-  color: var(--textcol);
-}
-.info-box table td .textlist :not(:last-child) {
-  margin-bottom: 6px;
-}
-.info-box table td .textlist li {
-  color: var(--textcol);
+.info-box table .desc-alt td {
+  text-align: center;
+  padding: 5px 0 10px;
 }
 
 /*slideshow*/
@@ -96,9 +95,6 @@
   overflow: auto;
   margin-top: 14px;
 }
-.slideshow-row .column {
-
-}
 .slideshow-row .column img {
   display: block;
   min-width: 100%;
@@ -127,5 +123,16 @@
   }
   .slideshow-box a i {
     font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  /*desc*/
+  .info-box table .desc td {
+    display: none;
+  }
+  /*desc-alt*/
+  .info-box table .desc-alt {
+    display: table-row;
   }
 }

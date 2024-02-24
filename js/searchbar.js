@@ -76,7 +76,6 @@ function search() {
   }
 
   widthSmall.addEventListener("change", function(event) {
-    console.log(counter);
     if (event.matches && !searchingFlag) {
       gallery.style.gridTemplateColumns="auto";
     }
