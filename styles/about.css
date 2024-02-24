@@ -85,7 +85,7 @@
   padding: 0 10px;
 }
 .skills-list li {
-  text-align: left;
+  text-align: justify;
   color: var(--textcol);
 }
 
@@ -130,6 +130,9 @@
   .hobby-row [class*="col-"] {
     width: 50%;
   }
+  .hobby-row > *:nth-child(2n+1) {
+    clear: both;
+ }
 }
 @media only screen and (max-width: 640px) {
   /*skills-row*/
@@ -141,3 +144,4 @@
     width: 100%;
   }
 }
+
