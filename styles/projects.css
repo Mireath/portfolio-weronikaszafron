@@ -82,9 +82,14 @@
 }
 .right-box > p {
   font-size: 16px;
-  text-align: justify;
   margin-bottom: 20px;
   color: var(--textcol);
+}
+.row .right-box > p {
+  text-align: left;
+}
+.row-reverse .right-box > p {
+  text-align: right;
 }
 
  /*header slideshow*/
@@ -229,5 +234,8 @@
   }
   .row-reverse .left-box {
     margin-left: 0;
+  }
+  .row-reverse .right-box > p {
+    text-align: left;
   }
 }

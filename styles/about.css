@@ -85,7 +85,7 @@
   padding: 0 10px;
 }
 .skills-list li {
-  text-align: justify;
+  text-align: left;
   color: var(--textcol);
 }
 

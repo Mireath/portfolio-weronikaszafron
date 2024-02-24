@@ -22,15 +22,11 @@
   color: var(--pink);
   text-align: right;
 }
-.info-box table td {
-  text-align: justify;
-}
 /*desc-alt*/
 .info-box table .desc-alt {
   display: none;
 }
 .info-box table .desc-alt td {
-  text-align: justify;
   padding: 5px 0 10px;
 }
 
