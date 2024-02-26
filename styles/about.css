@@ -14,7 +14,6 @@
 
 [class*="col-"] {
   float: left;
-  overflow: auto;
   padding: 15px;
 }
 
@@ -29,7 +28,40 @@
   display: table;
 }
 
-/*skills-box*/
+/*about-row*/
+.about-row {
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.about-row .portrait-box {
+  max-width: 340px;
+}
+.about-row .portrait-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-box {
+  max-width: 500px;
+  margin-left: 40px;
+}
+.about-box h2 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+  color: var(--pink);
+}
+.about-box p {
+  color: var(--textcol);
+}
+.about-box p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/*skills-row*/
 .skills-box {
   display: flex;
   flex-direction: column;
@@ -117,6 +149,40 @@
   text-align: center;
   color: var(--textcol);
 }
+
+/*row incentive*/
+.row-incentive {
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+}
+.row-incentive .bg {
+  display: block;
+  width: 100%;
+  max-height: inherit;
+  object-fit: cover;
+}
+.row-incentive .content-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 40px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.row-incentive .content-box > h1 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 20px;
+  text-wrap: nowrap;
+}
+
 /*responsive*/
 @media only screen and (max-width: 1024px) {
   /*skills-row*/
@@ -134,14 +200,54 @@
     clear: both;
  }
 }
+
+@media only screen and (max-width: 768px) {
+  /*about-row*/
+  .about-row {
+    flex-direction: column;
+  }
+  .about-row .portrait-box, .about-row .about-box {
+    width: 100%;
+  }
+  .about-row .portrait-box {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .about-row .about-box {
+    max-width: none;
+    margin-left: 0;
+  }
+  .about-row .about-box h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .row-incentive .content-box {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 @media only screen and (max-width: 640px) {
   /*skills-row*/
   .skills-row [class*="col-"] {
     width: 100%;
   }
+  /*skills-list*/
+  .skills-list {
+    max-width: none;
+    padding-right: 0;
+  }
   /*hobby-row*/
   .hobby-row [class*="col-"] {
     width: 100%;
+  }
+  .row-incentive .content-box > h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .row-incentive .content-box > h1 {
+    font-size: 24px;
   }
 }
 

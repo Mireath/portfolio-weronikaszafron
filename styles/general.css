@@ -298,3 +298,16 @@ footer .copyright {
     display: flex;
   }
 }
+
+
+/*animations*/
+/*
+@keyframes lift-anim {
+  from {transform: translateY(30px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+.lift-anim {
+  animation: lift-anim 0.3s ease-out;
+}
+*/

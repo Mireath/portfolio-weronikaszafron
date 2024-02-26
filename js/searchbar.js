@@ -20,10 +20,10 @@ function search() {
     txtValue = desc.textContent || desc.innerText;
 
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      imgBoxes[i].style.display = "";
+      imgBoxes[i].parentNode.style.display = "";
       counter++;
     } else {
-      imgBoxes[i].style.display = "none";
+      imgBoxes[i].parentNode.style.display = "none";
     }
   }
 
