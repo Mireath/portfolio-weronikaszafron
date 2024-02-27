@@ -9,16 +9,17 @@
 .img-gallery .project-href {
   display: inline-block;
   text-decoration: none;
-  height: fit-content;
+  height: 100%;
 }
 .img-box {
   position: relative;
-  height: fit-content;
+  height: 100%;
 }
 .img-box img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: filter 0.3s ease-out;
 }
 .img-box .overlay {
